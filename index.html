@@ -32,15 +32,15 @@
             </div>
         </div>
         <div class="hero-card">
-            <h3>🔥 Why Choose Us?</h3>
+            <h3>Why Choose Us?</h3>
             <ul>
-                <li>✅ 20+ Years Experience</li>
-                <li>✅ 5000+ Projects Completed</li>
-                <li>✅ On-Site Work Available</li>
-                <li>✅ Affordable Pricing</li>
-                <li>✅ Custom Designs</li>
+                <li>Since 2005</li>
+                <li>Custom Designs</li>
+                <li>Affordable Pricing</li>
+                <li>Trusted Local Service</li>
+                <li>Strong & Durable Work</li>
             </ul>
-            <p class="status">🟢 Currently Accepting Orders</p>
+            <p class="status">Currently Accepting Orders</p>
         </div>
     </section>
 
@@ -106,10 +106,10 @@
                     leaves satisfied.
                 </p>
             </div>
-            <div class="about-stats">
-                <div><h3>20+</h3><p>Years Experience</p></div>
-                <div><h3>5000+</h3><p>Projects Done</p></div>
-                <div><h3>100%</h3><p>Quality Work</p></div>
+            <div class="about-photo" onclick="openShopModal()">
+                <div class="shop-badge">Since 2005</div>
+                <img src="Shop/Fronttt.png" alt="Vandana Welding Shop">
+                <div class="shop-label">View Our Shop</div>
             </div>
         </div>
     </section>
@@ -179,6 +179,14 @@
     <a href="https://wa.me/919873202362" class="floating-whatsapp" target="_blank" rel="noopener noreferrer">
         <i class="fab fa-whatsapp"></i>
     </a>
+
+    <!-- SHOP PHOTO MODAL -->
+    <div id="shopModal" class="shop-modal" onclick="closeShopModal(event)">
+        <div class="shop-modal-inner">
+            <button class="lb-close" onclick="closeShopModal()">&times;</button>
+            <img src="Shop/Fronttt.png" alt="Vandana Welding Shop">
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

@@ -93,10 +93,23 @@ function changeImg(dir, e) {
 }
 
 document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') { closeViewer(); closeLightbox(); }
+    if (e.key === 'Escape') { closeViewer(); closeLightbox(); closeShopModal(); }
     if (e.key === 'ArrowRight') changeImg(1);
     if (e.key === 'ArrowLeft') changeImg(-1);
 });
+
+function openShopModal() {
+    document.getElementById('shopModal').classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeShopModal(e) {
+    if (!e || e.target === document.getElementById('shopModal') || e.target.classList.contains('lb-close')) {
+        document.getElementById('shopModal').classList.remove('active');
+        document.body.style.overflow = '';
+    }
+}
+
 
 function sanitize(str) {
     return str.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
