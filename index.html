@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vandana Welding Shop — Begumpur, Delhi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="glow"></div>
+        <div class="hero-content">
+            <p class="tag">Begumpur , Delhi — Trusted Since 2000+</p>
+            <h1><span>Vandana Welding</span></h1>
+            <div class="hero-buttons">
+                <a href="tel:+919873202362" class="btn call"><i class="fas fa-phone"></i> Call Now</a>
+                <a href="https://wa.me/919873202362" class="btn whatsapp" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+        </div>
+        <div class="hero-card">
+            <h3>🔥 Why Choose Us?</h3>
+            <ul>
+                <li>✅ 20+ Years Experience</li>
+                <li>✅ 5000+ Projects Completed</li>
+                <li>✅ On-Site Work Available</li>
+                <li>✅ Affordable Pricing</li>
+                <li>✅ Custom Designs</li>
+            </ul>
+            <p class="status">🟢 Currently Accepting Orders</p>
+        </div>
+    </section>
+
+
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section">
+        <p class="small-title">OUR WORK</p>
+        <h2>Recent Projects</h2>
+        <div class="gallery-grid">
+            <div class="gallery-box" onclick="openGallery('steel')">
+                <img src="Gates/Steel /IMG-20250311-WA0010.jpg" alt="Steel Gate">
+                <span>Steel Gate Work</span>
+            </div>
+            <div class="gallery-box" onclick="openGallery('iron')">
+                <img src="Gates/iron/IMG_20250326_121022.jpg" alt="Iron Gate">
+                <span>Iron Gate Work</span>
+            </div>
+            <div class="gallery-box" onclick="openGallery('railing')">
+                <img src="Gates/railing/IMG-20250415-WA0017.jpg" alt="Railing">
+                <span>Railing Work</span>
+            </div>
+            <div class="gallery-box" onclick="openGallery('shed')">
+                <img src="Gates/shed/IMG-20240523-WA0017.jpg" alt="Shed">
+                <span>Shed Work</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIGHTBOX MODAL -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
+        <div class="lightbox-inner">
+            <button class="lb-close" onclick="closeLightbox()">&times;</button>
+            <h3 id="lb-title"></h3>
+            <div class="lb-grid" id="lb-grid"></div>
+        </div>
+    </div>
+
+    <!-- FULL IMAGE VIEWER -->
+    <div id="imgViewer" class="img-viewer" onclick="closeViewer()">
+        <button class="lb-close" onclick="closeViewer()">&times;</button>
+        <button class="nav-btn prev" onclick="changeImg(-1, event)">&#8249;</button>
+        <img id="viewerImg" src="" alt="">
+        <button class="nav-btn next" onclick="changeImg(1, event)">&#8250;</button>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <p class="small-title">ABOUT US</p>
+        <h2>Our Story</h2>
+        <div class="about">
+            <div>
+                <p>
+                    <strong style="color:white">Vandana Welding Shop</strong> is a trusted welding and fabrication
+                    workshop in <strong style="color:#ff2d78">Begumpur, Delhi</strong>. With over
+                    <strong style="color:white">20+ years of experience</strong>, we have built a strong reputation
+                    for quality metal work at honest prices.
+                </p>
+                <br>
+                <p>
+                    From simple grill repairs to full gate fabrications, every job is handled with precision.
+                    Our craftsmen ensure every weld is strong, every design is clean, and every customer
+                    leaves satisfied.
+                </p>
+            </div>
+            <div class="about-stats">
+                <div><h3>20+</h3><p>Years Experience</p></div>
+                <div><h3>5000+</h3><p>Projects Done</p></div>
+                <div><h3>100%</h3><p>Quality Work</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="section review-section">
+        <p class="small-title">TESTIMONIALS</p>
+        <h2>What Customers Say</h2>
+        <div class="review-grid">
+            <div class="review">
+                <p>⭐⭐⭐⭐⭐</p>
+                <p style="margin:12px 0;color:#cfcfcf">"Excellent gate work! Very strong and clean finish. Highly recommended."</p>
+                <strong style="color:#ff8c00">— Ramesh Kumar, Begumpur</strong>
+            </div>
+            <div class="review">
+                <p>⭐⭐⭐⭐⭐</p>
+                <p style="margin:12px 0;color:#cfcfcf">"Got my shop shutter repaired same day. Very fast and affordable service."</p>
+                <strong style="color:#ff8c00">— Sunita Devi, Delhi</strong>
+            </div>
+            <div class="review">
+                <p>⭐⭐⭐⭐⭐</p>
+                <p style="margin:12px 0;color:#cfcfcf">"Amazing railing work for my staircase. Very professional team."</p>
+                <strong style="color:#ff8c00">— Ajay Singh, Rohini</strong>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+        <p class="small-title">REACH US</p>
+        <h2>Contact</h2>
+        <div class="contact">
+            <div class="contact-info">
+                <p><i class="fas fa-phone" style="color:#ff8c00;margin-right:10px"></i> <a href="tel:+919873202362" style="color:#cfcfcf;text-decoration:none">+91 98732 02362</a></p>
+                <p><i class="fab fa-whatsapp" style="color:#25d366;margin-right:10px"></i> <a href="https://wa.me/919873202362" style="color:#cfcfcf;text-decoration:none">WhatsApp Us</a></p>
+                <p><i class="fas fa-map-marker-alt" style="color:#ff8c00;margin-right:10px"></i> Vandana Welding, A-154, Rajiv Nagar Extension, Sector 38, Begum Pur, Delhi, 110086</p>
+                <p><i class="fas fa-clock" style="color:#ff8c00;margin-right:10px"></i> Sun – Sat : 9:00 Am – 9:00 Pm &nbsp;|&nbsp; Mon : 9:00 Am – 5:00 Pm</p>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13995.260346476558!2d77.04975506159042!3d28.7250716866773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d07054cd50eb7%3A0xb4dcd09b2aeeec96!2sVandana%20Welding!5e0!3m2!1sen!2sin!4v1781730192061!5m2!1sen!2sin" width="100%" height="250" style="border:0;border-radius:16px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <form id="quoteForm" onsubmit="submitForm(event)">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="tel" id="phone" placeholder="Phone Number" required>
+                <select id="workType">
+                    <option value="">-- Select Work Type --</option>
+                    <option>Gate Fabrication</option>
+                    <option>Grill Work</option>
+                    <option>Railing Work</option>
+                    <option>Shed Work</option>
+                    <option>Shutter Repair</option>
+                    <option>Welding Repair</option>
+                    <option>Custom Metal Work</option>
+                </select>
+                <textarea id="message" rows="4" placeholder="Describe your work..."></textarea>
+                <button type="submit"><i class="fas fa-paper-plane"></i> Send via WhatsApp</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p><strong style="color:white">Vandana Welding Shop</strong> — Begumpur, Delhi</p>
+        <p style="margin-top:8px">Quality Welding & Fabrication | Est. 2000+ | All Rights Reserved</p>
+    </footer>
+
+    <!-- FLOATING WHATSAPP -->
+    <a href="https://wa.me/919873202362" class="floating-whatsapp" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
