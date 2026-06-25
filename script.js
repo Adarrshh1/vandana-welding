@@ -90,7 +90,6 @@ const galleries = {
             "Gates/iron/bf7e6c6fba705618e5f361cfc9795133.jpg",
             "Gates/iron/c0cb95c453aa7550a9f36f7cb4f80eba.jpg",
             "Gates/iron/c546dcd8e73c61d212b9d34d3ac6f571.jpg",
-            "Gates/iron/caa12d0feb4be5391b56dfd6dd0270d7.jpg",
             "Gates/iron/e3500979f31d3bb5782ed0b469a7d217.jpg",
             "Gates/iron/e9080bc5e081b8f6ae17a48ba391f5aa.jpg",
             "Gates/iron/eac45f0093ec7eec906a8565fa745738.jpg",
