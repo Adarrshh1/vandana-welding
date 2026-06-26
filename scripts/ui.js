@@ -28,7 +28,10 @@ export function closeLightbox(e) {
   const lightbox = document.getElementById('lightbox');
   if (!lightbox) return;
 
-  if (!e || e.target === lightbox || e.target.classList.contains('lb-close')) {
+  const target = e?.target;
+  const isCloseButton = target instanceof Element && target.classList.contains('lb-close');
+
+  if (!e || target === lightbox || isCloseButton) {
     lightbox.classList.remove('active');
     document.body.style.overflow = '';
   }
