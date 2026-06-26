@@ -6,6 +6,7 @@ window.openGallery = openGallery;
 window.openViewer = openViewer;
 window.changeImg = changeImg;
 window.closeLightbox = closeLightbox;
+window.closeViewer = closeViewer;
 window.openShopModal = openShopModal;
 window.closeShopModal = closeShopModal;
 window.submitForm = submitForm;
