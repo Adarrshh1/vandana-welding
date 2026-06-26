@@ -1,0 +1,14 @@
+# macOS system files
+.DS_Store
+
+# Editor temporary files
+*.swp
+*.swo
+*~
+
+# Node / Python caches (if any)
+node_modules/
+__pycache__/
+
+# Logs
+*.log
