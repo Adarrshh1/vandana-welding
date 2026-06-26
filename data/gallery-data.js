@@ -26,7 +26,7 @@ export const galleries = {
       "Gates/Steel /69df7cc994f6b0eea41d18de9be6d52a.jpg",
       "Gates/Steel /6c3245a44bb49f4324427f38dec2ed4c.jpg",
       "Gates/Steel /6cf3f9a738e91188b7b9f6cfe139064c.jpg",
-      "Gates/Steel /6f9b865a54f0bcea7595f2d1e7a51.jpg",
+      "Gates/Steel /6f9b865a54f0bcea7595f2d1d21e7a51.jpg",
       "Gates/Steel /73a11da04fd49d782c0775e69941c208.jpg",
       "Gates/Steel /7b01417dcea5f5430d542df7b50e26ce.jpg",
       "Gates/Steel /7b293a20c76c989314ef9cfcc975f91b.jpg",
