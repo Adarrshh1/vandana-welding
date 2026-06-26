@@ -89,7 +89,6 @@ export const galleries = {
       "Gates/iron/41abe8c3536851e69f832b80df6aa72c.jpg",
       "Gates/iron/49042c19a1368a06f021de82e256af98.jpg",
       "Gates/iron/5eaa20d1901300c119339f318fb999e2.jpg",
-      "Gates/iron/761ff010b919f0c6a88bb87a907599f.jpg",
       "Gates/iron/778e28752c26edbe94dbb95a2c378095.jpg",
       "Gates/iron/IMG-20211012-WA0006.jpg",
       "Gates/iron/IMG-20240825-WA0004.jpg",
